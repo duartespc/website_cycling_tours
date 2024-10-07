@@ -15,7 +15,6 @@
       let thisForm = this;
 
       let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
         displayError(thisForm, 'The form action property is not set!');
@@ -49,9 +48,6 @@
       thisForm.querySelector('.sent-message').classList.add('d-block');
       thisForm.reset();
     })
-    .catch((error) => {
-      displayError(thisForm, error);
-    });
   }
 
   function displayError(thisForm, error) {
