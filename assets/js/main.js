@@ -5,6 +5,116 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+const translations = {
+  "pt": {
+    "about": "Sobre Nós",
+    "gallery": "Galeria",
+    "team": "Equipa",
+    "services": "Serviços",
+    "contact": "Contacto",
+    "checkUs": "Venha conhecer-nos!",
+    "bookNow": "Reserve já!",
+    "aboutUsPart1": "A Chain Cycling Tours nasceu da paixão comum de dois amigos.",
+    "aboutUsPart2": "Pode perguntar-se por que escolhemos 'Chain Cycling Tours'. Bem, para nós a parte chave do nome é a 'Chain'. Na linguagem do ciclismo, todos sabemos o que significa, mas na linguagem comum também pode significar um laço, e é precisamente isso que procuramos criar.",
+    "aboutUsPart3": "O nosso objetivo é partilhar experiências e criar laços com pessoas que partilhem a mesma paixão pelo ciclismo, como nós, e ao mesmo tempo mostrar um pouco do nosso belo Portugal.",
+    "aboutUsPart4": "Está pronto para vir e mover a sua corrente connosco?",
+    "galleryDescription": "Veja algumas das coisas que pode descobrir durante os nossos passeios!",
+    "penaPalace": "Palácio da Pena",
+    "customTour": "Passeio Personalizado",
+    "bikeRental": "Aluguer de Bicicleta de Estrada",
+    "helmetRental": "Aluguer de Capacete",
+    "meetOurTeam": "Conheça a Nossa Equipa!",
+    "founderTopGuide": "Fundador & Guia Principal",
+    "descriptionDavidPart1": "Ciclista e Entusiasta de Granfondos",
+    "descriptionDavidPart2": "Adora desporto, mas foi no ciclismo que encontrou a sua verdadeira paixão.",
+    "descriptionDavidPart3": "Começou a pedalar em 2005, mas só depois de 2015 começou a participar em Granfondos e a levar o ciclismo mais a sério.",
+    "descriptionNunoPart1": "Ciclista e Corredor Apaixonado.",
+    "descriptionNunoPart2": "Entusiasta de Mediofondos.",
+    "descriptionNunoPart3": "Finalista das Seis Majors Mundiais de Maratonas e Várias Maratonas Sub-3h.",
+    "servicesDescription": "Veja as nossas ofertas!",
+    "starting15": "A partir de 15€",
+    "starting40": "A partir de 40€",
+    "starting150": "A partir de 150€",
+    "starting200": "A partir de 200€",
+    "starting590": "A partir de 590€",
+    "starting1390": "A partir de 1390€",
+    "tourSintraDescription": "Um destino turístico de grande importância, famoso pela sua beleza pitoresca. O município tem vários palácios históricos, castelos, praias cénicas, parques e jardins.",
+    "tourCabodaRocaDescription": "O ponto mais ocidental do continente europeu e de Portugal. Inclui um farol que começou a funcionar em 1772.",
+    "tourArrabidaDescription": "Onde montanha e oceano se encontram perto de Setúbal.",
+    "tourEspichelDescription": "",
+    "tourEN222Description": "De Este a Oeste. Almedra - Vila Nova de Gaia através da icónica Rota da EN 222 (estrada nacional 222)",
+    "tourEN2Description": "De Norte a Sul. Chaves a Faro numa viagem de 6 a 10 dias por Portugal de Norte a Sul pela icónica Rota da EN2 (Estrada Nacional 2)",
+    "customTourDescription": "",
+    "bikeRentalDescription": "",
+    "helmetRentalDescription": "",
+    "emailSent": "A sua mensagem foi enviada. Obrigado!",
+    "sendEmailButton": "Enviar Mensagem",
+    "customTour24h": "Tour Personalizado - 24h",
+    "priceDepending": "Preço variável",
+    "bikeRental24h": "Aluguer Bicicleta - 24h",
+    "helmetRental24h": "Alugar Capacete - 24h",
+    "loading": "A carregar",
+    "namePlaceholder": "Nome",
+    "emailPlaceholder": "Email",
+    "subjectPlaceholder": "Assunto",
+    "messagePlaceholder": "Mensagem",
+  },
+  "en": {
+    "about": "About Us",
+    "gallery": "Gallery",
+    "team": "Team",
+    "services": "Services",
+    "contact": "Contact",
+    "checkUs": "Check us out!",
+    "bookNow": "Book Now!",
+    "aboutUsPart1": "Chain Cycling Tours was born from a common passion of two friends.",
+    "aboutUsPart2": "You may ask why we choose “Chain Cycling Tours”. Well, for us the key part of the name is the “Chain”. In cycling language, we all know what it means but in common language can also mean a bond and that's precisely what our end game is.",
+    "aboutUsPart3": "Our goal is to share experiences and create bonds with people that have same passion for cycling like we do and at the same time show some of our beautiful Portugal.",
+    "aboutUsPart4": "Are you ready to come and move your chain with us?",
+    "galleryDescription": "Check out some of the things you can see you during our tours!",
+    "penaPalace": "Pena Palace",
+    "customTour": "Custom Tour",
+    "bikeRental": "Road Bike Rental",
+    "helmetRental": "Helmet Rental",
+    "meetOurTeam": "Meet our Team!",
+    "founderTopGuide": "Founder & Top Guide",
+    "descriptionDavidPart1": "Cyclist and Granfondo Enthusiast",
+    "descriptionDavidPart2": "Loves sports but was in cycling that he found his true passion.",
+    "descriptionDavidPart3": "Started cycling in 2005 but was only after 2015 that he started doing some Fondos and riding his bike in a more serious way.",
+    "descriptionNunoPart1": "Avid Cyclist and Runner.",
+    "descriptionNunoPart2": "Mediofondo Enthusiast.",
+    "descriptionNunoPart3": "Six World Major Marathons Finisher and Several Sub-3h Marathoner.",
+    "servicesDescription": "Check out our offers!",
+    "starting15": "Starting from 15€",
+    "starting40": "Starting from 40€",
+    "starting150": "Starting from 150€",
+    "starting200": "Starting from 200",
+    "starting590": "Starting from 590€",
+    "starting1390": "Starting from 1390€",
+    "tourSintraDescription": "A major tourist destination famed for its picturesqueness, the municipality has several historical palaces, castles, scenic beaches, parks and gardens.",
+    "tourCabodaRocaDescription": "The most western point in mainland Portugal and Europe. Notably, the point includes a lighthouse that started operation in 1772.",
+    "tourArrabidaDescription": "Where mountain and ocean colides near Setúbal.",
+    "tourEspichelDescription": "",
+    "tourEN222Description": "East to West. Almedra - Vila Nova de Gaia thru the iconic route of EN 222 (national road 222)",
+    "tourEN2Description": "Nort to South. Chaves to Faro on 6 to 10 days ride across Portugal from North to South thru the iconic route of EN2 (National Road 2)",
+    "customTourDescription": "",
+    "bikeRentalDescription": "",
+    "helmetRentalDescription": "",
+    "emailSent": "Your message has been sent. Thank you!",
+    "sendEmailButton": "Send Message",
+    "customTour24h": "Custom Tour - 24h",
+    "priceDepending": "Price depending on tour",
+    "bikeRental24h": "Bike Rental - 24h",
+    "helmetRental24h": "Helmet Rental - 24h",
+    "loading": "Loading",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Message",
+  }
+};
+
 (function() {
   "use strict";
 
@@ -224,6 +334,29 @@
       once: true,
       mirror: false
     })
+  });
+
+
+  /**
+   * Switch Language
+   */
+  const switchLanguage = (lang) => {
+    document.querySelectorAll('[data-key]').forEach(elem => {
+      const key = elem.getAttribute('data-key');
+      // Explicitly handle placeholder updates for input and textarea
+      if (elem.tagName.toLowerCase() === 'input' || elem.tagName.toLowerCase() === 'textarea') {
+        if (translations[lang][key]) {
+          elem.placeholder = translations[lang][key];  // Use direct assignment for placeholders
+        }
+      } else {
+        // For other elements like div, button, etc., update their text content
+        elem.textContent = translations[lang][key];
+      }
+    });
+  };
+
+  document.getElementById('languageSwitcher').addEventListener('change', function() {
+    switchLanguage(this.value);
   });
 
   /**

@@ -51,13 +51,21 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#about" data-key="about">About</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio" data-key="gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team" data-key="team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#services" data-key="services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#contact" data-key="contact">Contact</a></li>
         </ul>
+        <!-- Language Switcher as a form element, aligned to the right -->
+        <select id="languageSwitcher" class="form-language">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+
+      
     </div>
   </header><!-- End Header -->
 
@@ -66,7 +74,7 @@
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Chain Cycling Tours</h1>
       <h2>“It is the unknown around the corner that turns my wheels.” — Heinz Stücke</h2>
-      <a href="#about" class="btn-get-started">Check us out!</a>
+      <a href="#about" class="btn-get-started" data-key="checkUs">Check us out!</a>
     </div>
   </section><!-- End Hero Section -->
 
@@ -78,18 +86,18 @@
         <div class="row about-container">
 
           <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">About Us</h2>
-            <p>
+            <h2 class="title" data-key="about">About Us</h2>
+            <p data-key="aboutUsPart1">
               Chain Cycling Tours was born from a common passion of two friends. 
             </p>
-            <p>
+            <p data-key="aboutUsPart2">
               You may ask why we choose “Chain Cycling Tours”. Well, for us the key part of the name is the “Chain”. In cycling language, we all know what it means but in common language can also mean a bond and that's precisely what our end game is.
             </p>
-            <p>
+            <p data-key="aboutUsPart3">
               Our goal is to share experiences and create bonds with people that have same passion for cycling like we do and at the same time show some of our beautiful Portugal.  
             </p>
-            <p>
-              Are you ready to come and move your chain with us?!?
+            <p data-key="aboutUsPart4">
+              Are you ready to come and move your chain with us?
             </p>
 
           </div>
@@ -104,8 +112,8 @@
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h3 class="section-title">Gallery</h3>
-          <p class="section-description">Check out some of the things you can see you during our tours!</p>
+          <h3 class="section-title" data-key="gallery">Gallery</h3>
+          <p class="section-description" data-key="galleryDescription">Check out some of the things you can see you during our tours!</p>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -116,7 +124,7 @@
             </a>
             <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
               <div class="portfolio-info">
-                <h4>Pena Palace</h4>
+                <h4 data-key="penaPalace">Pena Palace</h4>
               </div>
             </a>
           </div>
@@ -183,7 +191,7 @@
             </a>
             <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
               <div class="portfolio-info">
-                <h4>Custom Tour</h4>
+                <h4 data-key="customTour">Custom Tour</h4>
               </div>
             </a>
           </div>
@@ -194,7 +202,7 @@
             </a>
             <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
               <div class="portfolio-info">
-                <h4>Road Bike Rental</h4>
+                <h4 data-key="bikeRental">Road Bike Rental</h4>
               </div>
             </a>
           </div>
@@ -205,7 +213,7 @@
             </a>
             <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
               <div class="portfolio-info">
-                <h4>Helmet Rental</h4>
+                <h4 data-key="helmetRental">Helmet Rental</h4>
               </div>
             </a>
           </div>
@@ -213,7 +221,7 @@
         
       </div>
       <div class="text-center">
-        <a href="https://www.picktime.com/chaincyclingtours" class="ptbkbtn" id="btn-get-started" target="_blank" style="float:none;">Book Now!</a>
+        <a href="#contact" class="ptbkbtn" id="btn-get-started" target="_blank" style="float:none;" data-key="bookNow">Book Now!</a>
       </div>
 
     </section><!-- End Portfolio Section -->
@@ -224,19 +232,18 @@
     <section id="team">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h3 class="section-title">Team</h3>
-          <p class="section-description">Meet our Team!</p>
+          <h3 class="section-title" data-key="team">Team</h3>
+          <p class="section-description" data-key="meetOurTeam">Meet our Team!</p>
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
               <h4>David Filipe Santos</h4>
-              <span>Founder & Top Guide</span>
-              <p>Cyclist and Granfondo Enthusiast
-                  Loves sports but was in cycling that he found his true passion.
-                  Started cycling in 2005 but was only after 2015 that he started doing some Fondos and riding his bike in a more serious way.             
-              </p>
+              <span data-key="founderTopGuide">Founder & Top Guide</span>
+              <p data-key="descriptionDavidPart1">Cyclist and Granfondo Enthusiast</p>
+              <p data-key="descriptionDavidPart2">Loves sports but was in cycling that he found his true passion.</p>
+              <p data-key="descriptionDavidPart3">Started cycling in 2005 but was only after 2015 that he started doing some Fondos and riding his bike in a more serious way.</p>
               <div class="social">
                 <a href="https://www.facebook.com/david.f.santos.75"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/dfmcos/"><i class="bi bi-instagram"></i></a>
@@ -248,13 +255,13 @@
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
               <h4>Nuno Salgueiro Antunes</h4>
-              <span>Founder & Top Guide</span>
-              Avid Cyclist and Runner. 
-              Mediofondo Enthusiast.
-              Six World Major Marathons Finisher and Several Sub-3h Marathoner. 
+              <span data-key="founderTopGuide">Founder & Top Guide</span>
+              <p data-key="descriptionNunoPart1">Avid Cyclist and Runner. </p>
+              <p data-key="descriptionNunoPart2">Mediofondo Enthusiast.</p>
+              <p data-key="descriptionNunoPart3">Six World Major Marathons Finisher and Several Sub-3h Marathoner.</p>
               <div class="social">
                 <a href="https://www.facebook.com/nuno.s.antunes.3"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/nunosa2027/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/nunosa2027"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -263,21 +270,113 @@
       </div>
     </section><!-- End Team Section -->
 
-    <a href="https://www.picktime.com/chaincyclingtours" class="ptbkbtn" target="_blank" style="position: fixed;right: 0px;top: 50%;margin-top: -90px;float:none;z-index: 9999999"><img border="none" src="https://www.picktime.com/img/widgetButtons/BookingPage/picktime-book-online-right-black.png" alt="Book an appointment with Chain Cycling Tours"/></a>
+<!--     <a href="https://www.picktime.com/chaincyclingtours" class="ptbkbtn" target="_blank" style="position: fixed;right: 0px;top: 50%;margin-top: -90px;float:none;z-index: 9999999"><img border="none" src="https://www.picktime.com/img/widgetButtons/BookingPage/picktime-book-online-right-black.png" alt="Book an appointment with Chain Cycling Tours"/></a>
+ -->
 
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title" data-key="services">Services</h3>
+          <p class="section-description" data-key="servicesDescription">Check out our offers!</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/tour-sintra.webp" alt=""></div>
+              <h4>Tour Sintra - 3h</h4>
+              <span data-key="starting150">Starting from 150€</span>
+              <p data-key="tourSintraDescription">A major tourist destination famed for its picturesqueness, the municipality has several historical palaces, castles, scenic beaches, parks and gardens.             
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/tour-cabo-roca.webp" alt=""></div>
+              <h4>Tour Cabo da Roca - 4h</h4>
+              <span data-key="starting150">Starting from 150€</span>
+              <p data-key="tourCabodaRocaDescription">The most western point in mainland Portugal and Europe. Notably, the point includes a lighthouse that started operation in 1772.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/tour-arrabida.webp" alt=""></div>
+              <h4>Tour Arrábida - 4h</h4>
+              <span data-key="starting200">Starting from 200€</span>
+              <p data-key="tourArrabidaDescription">Where mountain and ocean colides near Setúbal.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/tour-espichel.webp" alt=""></div>
+              <h4>Tour Espichel - 4h</h4>
+              <span data-key="starting200">Starting from 200€</span>
+              <p data-key="tourEspichelDescription"></p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/tour-en222.webp" alt=""></div>
+              <h4>Tour EN222 - 48h</h4>
+              <span data-key="starting590">Starting from 590€</span>
+              <p data-key="tourEN222Description">East to West. Almedra - Vila Nova de Gaia thru the iconic route of EN 222 (national road 222)</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/tour-en2.webp" alt=""></div>
+              <h4>Tour EN2 - 99h</h4>
+              <span data-key="starting1390">Starting from 1390€</span>
+              <p data-key="tourEN2Description">Nort to South. Chaves to Faro on 6 to 10 days ride across Portugal from North to South thru the iconic route of EN2 (National Road 2)</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/tour-custom.webp" alt=""></div>
+              <h4 data-key="customTour24h">Custom Tour - 24h</h4>
+              <span data-key="priceDepending">Price depending on tour</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/bike-rental.webp" alt=""></div>
+              <h4 data-key="bikeRental24h">Bike Rental - 24h</h4>
+              <span data-key="starting40">Starting from 40€</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/helmet-rental.webp" alt=""></div>
+              <h4 data-key="helmetRental24h">Helmet Rental - 24h</h4>
+              <span data-key="starting15">Starting from 15€</span>
+            </div>
+          </div>
+
+
+
+
+      </div>
+    </section>
 
 
     <!-- ======= Contact Section ======= -->
     <section id="contact">
       <div class="container">
         <div class="section-header">
-          <h3 class="section-title">Contact</h3>
+          <h3 class="section-title" data-key="contact">Contact</h3>
         </div>
       </div>
 
       <!-- Uncomment below if you wan to use dynamic maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.6790334518996!2d-9.250528724557327!3d38.72517745684832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc682c905327%3A0x3c7a827ab53988c3!2sR.%205%20de%20Outubro%2033%2C%202790-049%20Carnaxide!5e0!3m2!1spt-PT!2spt!4v1705344967814!5m2!1spt-PT!2spt" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+<!--       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.6790334518996!2d-9.250528724557327!3d38.72517745684832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecc682c905327%3A0x3c7a827ab53988c3!2sR.%205%20de%20Outubro%2033%2C%202790-049%20Carnaxide!5e0!3m2!1spt-PT!2spt!4v1705344967814!5m2!1spt-PT!2spt" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+ -->
       <div class="container mt-5">
         <div class="row justify-content-center">
 
@@ -312,25 +411,25 @@
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="http://localhost:3050/send" enctype="multipart/form-data" method="post" role="form" class="php-email-form">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-key="namePlaceholder" required>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-key="emailPlaceholder" required>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-key="subjectPlaceholder" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" data-key="messagePlaceholder" required></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
+                  <div class="loading" data-key="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message" data-key="emailSent">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit" data-key="sendEmailButton">Send Message</button></div>
               </form>
             </div>
           </div>
@@ -380,12 +479,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Script Embedded Booking System-->
- 
-  <script>
-    !function(e,t,n,s,i,c){i=t.createElement(n),c=t.getElementsByTagName(n)[0],i.async=1,
-    i.src=s,c.parentNode.insertBefore(i,c)}(window,document,"script","https://www.picktime.com/assets/booking.js");
-  </script>
 
 </body>
 
