@@ -59,6 +59,7 @@ const translations = {
     "emailPlaceholder": "Email",
     "subjectPlaceholder": "Assunto",
     "messagePlaceholder": "Mensagem",
+    "showMore": "Ver Mais!"
   },
   "en": {
     "about": "About Us",
@@ -112,6 +113,7 @@ const translations = {
     "emailPlaceholder": "Your Email",
     "subjectPlaceholder": "Subject",
     "messagePlaceholder": "Message",
+    "showMore": "Show More Pictures!"
   }
 };
 
