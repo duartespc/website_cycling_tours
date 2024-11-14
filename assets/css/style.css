@@ -867,6 +867,7 @@ section {
   display: none;
 }
 
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -944,12 +945,22 @@ section {
   margin-bottom: 20px;
 }
 
-#team .member .pic {
+#team .member .pic1 {
   margin-bottom: 5px;
   overflow: hidden;
 }
 
-#team .member .pic img {
+#team .member .pic2 {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+
+#team .member .pic1 img {
+  max-width: 90%;
+}
+
+#team .member .pic2 img {
   max-width: 100%;
 }
 
