@@ -123,12 +123,12 @@ h6 {
 
 #header.header-scrolled {
   background: rgba(52, 59, 64, 0.9);
-  height: 70px;
+  height: 85px;
   transition: all 0.5s;
 }
 
 .scrolled-offset {
-  margin-top: 70px;
+  margin-top: 85px;
 }
 
 /*--------------------------------------------------------------
